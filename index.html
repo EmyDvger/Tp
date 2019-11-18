@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-    <title>TP</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width-device-width, initial-scale-1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+  <title>TP</title>
+</head>
+<body>
+  <!-- Col = toujours du plus petit écran vers le pls grand-->
+  <!-- Col = aligne les 4 col automatiquement et permet de changer la taille des écrans-->
+  <!-- concerne l'en-tête -->
+  <div class="container">
+    <div class="jumbotron" role="alert">
+      <!-- jumbotron élément d'affichage, partie la plus importante de la page -->
+      <h1 class= display-4>Emilie Duverger</h1>
+      <!-- display-4 Permet de modifier la typographie d'un texte en fonction du chiffre que l'on met-->
+      <p class="lead">To be or not to be, that is a question</p>
+      <!-- le lead paragraphe mis en évidence par rapport à un autre -->
+    </div>
+    <!-- converne la nav barre -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- la navbar expand est un menu déroulant. bg light represente la couleur de fond -->
+      <!-- button class c'est le burger -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse expand-lg" id="navbarNavAltMarkup">
+        <div class="navbar-nav lead">
+          <a class="nav-item nav-link" href="#">A propos <span class="sr-only">(current)</span></a>
+          <!-- item active : active la surbrillance du texte/ # de href dit qu'on reste sur la meme page -->
+          <a class="nav-item nav-link" href="#">Mon parcours</a>
+          <a class="nav-item nav-link" href="#">Mes expériences</a>
+          <a class="nav-item nav-link" href="#">Mes hobbies</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Concerne la partie "à propos" -->
+    <div class="container bg-secondary">
+      <div class="row">
+        <!-- col = c'est le nombre colonne - bg couleur fond bloc - text couleur et position   -->
+        <div class="col-sm-12 col-lg-4 m-3 ">
+          <img src="assets/img/emilie.jpg" class="rounded float-left border border-light" alt="...">
+        </div>
+        <div class="col-sm-12 col-lg-8 p-3">
+        <p class="text-white text-left font-weight-bold lead">A propos :</p>
+        <p class="text-white text-left">Passionnée</p>
+      </div>
+    </div>
     <!-- script de bootstrap toujours à la fin de body -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
-</html>
+  </html>
